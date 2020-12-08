@@ -19,7 +19,6 @@ public class JwtShiroRealm extends AuthorizingRealm {
         this.setCredentialsMatcher(new JwtCredentialsMatcher());
     }
 
-    //授权
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
         if (principals == null) {
